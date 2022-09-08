@@ -62,4 +62,5 @@ function startCount(el){
 		if(el.textContent == goal){
 			clearInterval(count2)
 		}
-},2000 / goal)}
+	},2000 / goal)
+}

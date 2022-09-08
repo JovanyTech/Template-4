@@ -26,42 +26,42 @@
                     </div>
                     <ul class="links">
                         <li>
-                            <a href="#testimonials"><i class="far fa-comments fa-fw"></i>Testimonials</a>
+                            <a href="#"><i class="far fa-comments fa-fw"></i>Testimonials</a>
                         </li>
                         <li>
 
-                            <a href="#team"><i class="far fa-user fa-fw"></i>Team Members</a>
+                            <a href="#"><i class="far fa-user fa-fw"></i>Team Members</a>
                         </li>
                         <li>
-                            <a href="#services"><i class="far fa-building fa-fw"></i>Services</a>
+                            <a href="#"><i class="far fa-building fa-fw"></i>Services</a>
                         </li>
                         <li>
-                            <a href="#our-skills"><i class="far fa-check-circle fa-fw"></i>Our Skills</a>
+                            <a href="#"><i class="far fa-check-circle fa-fw"></i>Our Skills</a>
                         </li>
                     
                         <li>
-                            <a href="#work-steps"><i class="far fa-clipboard fa-fw"></i>How It Works</a>
+                            <a href="#"><i class="far fa-clipboard fa-fw"></i>How It Works</a>
                         </li>
                     </ul>
                     <ul class="links">
                         <li>
-                            <a href="#events"><i class="far fa-calendar-alt fa-fw"></i>Events</a>
+                            <a href="#"><i class="far fa-calendar-alt fa-fw"></i>Events</a>
                         </li>
                         
                         <li>
-                            <a href="#pricing"><i class="fas fa-server fa-fw"></i>Pricing Plans</a>
+                            <a href="#"><i class="fas fa-server fa-fw"></i>Pricing Plans</a>
                         </li>
                         
                         <li>
-                            <a href="#videos"><i class="far fa-play-circle fa-fw"></i>Top Videos</a>
+                            <a href="#"><i class="far fa-play-circle fa-fw"></i>Top Videos</a>
                         </li>
                         
                         <li>
-                            <a href="#stats"><i class="far fa-chart-bar fa-fw"></i>Stats</a>
+                            <a href="#"><i class="far fa-chart-bar fa-fw"></i>Stats</a>
                         </li>
                         
                         <li>
-                            <a href="#discount"><i class="fas fa-percent fa-fw"></i>Request A Discount</a>
+                            <a href="#"><i class="fas fa-percent fa-fw"></i>Request A Discount</a>
                         </li>
                     </ul>
                 </div></li>
@@ -275,7 +275,7 @@
                 <i class="filled fas fa-star"></i>
                 <i class="filled fas fa-star"></i>
                 <i class="filled fas fa-star"></i>
-                <i class="far fa-star"></i>
+                <i class="filled fas fa-star"></i>
                 <i class="far fa-star"></i>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore soluta praesentium distinctio ex harum perspiciatis eligendi aut, sed quidem nesciunt! Velit, alias voluptates minima repellat illum harum ratione itaque blanditiis!</p>
@@ -443,7 +443,7 @@
     </div>
 	<div class='spikes'></div>
     <div class="work-steps" id="work-steps">
-        <h2 class="main-title">How it works ?</h2>
+        <h2 class="main-title">What it works ?</h2>
         <div class="container">
             <img src="m.webp" alt="" class="image">
             <div class="info">
@@ -505,7 +505,7 @@
         </div>
     </div>
 	<div class='spikes'></div>
-	<div class='pricing' id='pricing'>
+	<div class='pricing'>
 	<h2 class='main-title'>Pricing Plans</h2>
 	<div class='container'>
 	<div class='box'>
@@ -694,7 +694,8 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. A officiis corporis ad
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function() {
-        $('.mega').on('click',function(){
+        $('.mega').on('click',function(event){
+            event.preventDefault()
             $('.mega-menu').addClass("b")
         })
         $('.landing').on('click',function(event){
